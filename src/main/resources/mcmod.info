@@ -1,0 +1,21 @@
+[
+{
+  "modid": "SpiritDistillery",
+  "name": "Spirit Distillery",
+  "description": "Distill a variety of spirits and enjoy them by yourself, or with friends! Drink Responsibily",
+  "version": "0.1a",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Moosetra"
+  ],
+  "credits": "Moosetra",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
