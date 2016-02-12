@@ -10,6 +10,6 @@ public class ModItems
 
     public static void init()
     {
-        GameRegistry.registerItem(TarPile,"Tar Pile");
+        GameRegistry.registerItem(TarPile,"tarPile");
     }
 }
