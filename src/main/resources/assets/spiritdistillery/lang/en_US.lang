@@ -1,0 +1,20 @@
+# Items
+item.spiritdistillery:tarPile.name=Tar Pile
+item.spiritdistillery:carboniteIngot.name=Carbonite Ingot
+item.spiritdistillery:carboniteLighter.name=Carbonite Lighter
+item.spiritdistillery:carboniteAxe.name=Carbonite Axe
+item.spiritdistillery:carboniteIngot.name=Carbonite Lighter
+item.spiritdistillery:carbonitePickaxe.name=Carbonite Pickaxe
+item.spiritdistillery:carboniteShovel.name=Carbonite Shovel
+item.spiritdistillery:carboniteSword.name=Carbonite Sword
+
+# Blocks
+tile.spiritdistillery:tarBlock.name=Tar Block
+tile.spiritdistillery:carboniteBomb.name=Carbonite Bomb
+tile.spiritdistillery:carboniteOre.name=Carbonite Ore
+tile.spiritdistillery:redMapleLeaf.name=Red Maple Leaf
+tile.spiritdistillery:redMapleLog.name=Red Maple Log
+tile.spiritdistillery:tarmac.name=Tarmac
+
+# Creative Tabs
+itemGroup.spiritdistillery=Spirit Distillery

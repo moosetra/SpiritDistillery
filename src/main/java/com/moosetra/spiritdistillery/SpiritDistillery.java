@@ -1,7 +1,9 @@
 package com.moosetra.spiritdistillery;
 
 import com.moosetra.spiritdistillery.handler.ConfigurationHandler;
+import com.moosetra.spiritdistillery.init.ModBlocks;
 import com.moosetra.spiritdistillery.init.ModItems;
+import com.moosetra.spiritdistillery.init.Recipes;
 import com.moosetra.spiritdistillery.proxy.IProxy;
 import com.moosetra.spiritdistillery.reference.Reference;
 import com.moosetra.spiritdistillery.utility.LogHelper;
@@ -29,6 +31,8 @@ public class SpiritDistillery
         LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
+        ModBlocks.init();
+        Recipes.init();
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
