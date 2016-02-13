@@ -3,6 +3,7 @@ package com.moosetra.spiritdistillery.init;
 import com.moosetra.spiritdistillery.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemAxe;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems
@@ -43,5 +44,4 @@ public class ModItems
         GameRegistry.registerItem(StyleB375mLBottle, "styleB375mLBottle");
         GameRegistry.registerItem(StyleB750mLBottle, "styleB750mLBottle");
     }
-    public static Item.ToolMaterial carbonite = EnumHelper.addToolMaterial("Carbonite", 2, 350, 7.0F, 5, 14);
 }

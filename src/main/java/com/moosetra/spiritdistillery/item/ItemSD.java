@@ -7,6 +7,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.EnumHelperClient;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemSD extends Item
@@ -40,5 +41,5 @@ public class ItemSD extends Item
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
-    public static ToolMaterial carbonite = EnumHelper.addToolMaterial("Carbonite", 2, 350, 7.0F, 5, 14);
+    public ToolMaterial carboniteMat = EnumHelperClient.addToolMaterial("carnoniteMat", 2, 350, 7.0F, 5F, 14);
 }
