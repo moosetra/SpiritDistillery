@@ -1,8 +1,13 @@
 package com.moosetra.spiritdistillery.tileentity;
 
+import io.netty.handler.codec.http.HttpHeaders;
+import net.minecraft.network.Packet;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraftforge.common.util.ForgeDirection;
 
-public class TileEntitySD extends TileEntity
+import java.util.UUID;
+
+public class TileEntitySD
 {
 
 }

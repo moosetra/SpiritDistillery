@@ -10,6 +10,12 @@ item.spiritdistillery:carboniteSword.name=Carbonite Sword
 item.spiritdistillery:carboniteRod.name=Carbonite Rod
 item.spiritdistillery:carboniteReinforcements.name=Carbonite Reinforcements
 item.spiritdistillery:carboniteDust.name=Carbonite Dust
+item.spiritdistillery:styleA375mLBottle.name=375mL Bottle
+item.spiritdistillery:styleA750mLBottle.name=750mL Bottle
+item.spiritdistillery:styleA175LBottle.name=1.75L Bottle
+item.spiritdistillery:styleB375mLBottle.name=375mL Bottle
+item.spiritdistillery:styleB750mLBottle.name=750mL Bottle
+item.spiritdistillery:styleB175LBottle.name=1.75L Bottle
 
 
 # Blocks
@@ -26,6 +32,11 @@ tile.spiritdistillery:carboniteBlock.name=Carbonite Block
 tile.spiritdistillery:carboniteTank.name=Carbonite Tank
 tile.spiritdistillery:fermenter.name=Fermenter
 tile.spiritdistillery:carboniteFrame.name=Carbonite Frame
+tile.spiritdistillery:barrel.name=Barrel
+
+# keys
+keys.spiritdistillery.category=Spirit Distillery
+keys.spiritdistillery.smellandtaste=Smell and Taste
 
 # Creative Tabs
 itemGroup.spiritdistillery=Spirit Distillery

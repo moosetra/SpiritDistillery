@@ -20,6 +20,7 @@ public class ModBlocks
     public static final BlockSD CarboniteTank = new BlockCarboniteTank();
     public static final BlockSD RedMaplePlanks= new BlockRedMaplePlanks();
     public static final BlockSD Fermenter = new BlockFermenter();
+    public static final BlockSD Barrel = new BlockBarrel();
 
     public static void init()
     {
@@ -36,6 +37,7 @@ public class ModBlocks
         GameRegistry.registerBlock(CarboniteTank,"carboniteTank");
         GameRegistry.registerBlock(RedMaplePlanks,"redMaplePlanks");
         GameRegistry.registerBlock(Fermenter,"fermenter");
+        GameRegistry.registerBlock(Barrel, "barrel");
 
     }
 }

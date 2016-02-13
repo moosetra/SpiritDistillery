@@ -5,6 +5,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class Recipes
 {
@@ -39,7 +40,7 @@ public class Recipes
         ItemStack hopperStack = new ItemStack(Blocks.hopper);
 
 
-
+        //Non Ore Dictionary Shaped Recipes
         GameRegistry.addRecipe(carbonitePickaxeStack, "xxx", " y ", " y ",
                 'x', carboniteIngotStack,'y', stickStack);
 
@@ -67,11 +68,11 @@ public class Recipes
         GameRegistry.addRecipe(carboniteRodStack, "   ", "xxx", "   ",
                 'x', carboniteIngotStack);
 
-        GameRegistry.addRecipe(caskStack, "xzx", "yyy", "xyx",
-                'x', carboniteRodStack, 'y', redMaplePlanksStack, 'z', hopperStack);
+        //GameRegistry.addRecipe(caskStack, "xzx", "yyy", "xyx",
+                //'x', carboniteRodStack, 'y', redMaplePlanksStack, 'z', hopperStack);
 
-        GameRegistry.addRecipe(agingBarrelStack, "xzx", "zyz", "xyx",
-                'x', carboniteReinforcementsStack, 'y', redMapleLogStack, 'z', carboniteTankStack, 'z', hopperStack);
+        //GameRegistry.addRecipe(agingBarrelStack, "xzx", "zyz", "xyx",
+                //'x', carboniteReinforcementsStack, 'y', redMapleLogStack, 'z', carboniteTankStack, 'z', hopperStack);
 
         GameRegistry.addRecipe(carboniteReinforcementsStack, "xxx", "zyz", "xxx",
                 'x', carboniteRodStack, 'y', carboniteBlockStack, 'z', carboniteIngotStack);
@@ -86,12 +87,25 @@ public class Recipes
                 'x',carboniteReinforcementsStack  , 'y',carboniteFrameStack, 'z', carboniteTankStack,
                 'w', redMapleLogStack, 'v', hopperStack);
 
+        //Non Ore Dictionary Shapless Recipes
         GameRegistry.addShapelessRecipe(redMaplePlanksStack, redMapleLogStack);
 
+        //Smelting Recipes
         GameRegistry.addSmelting(carboniteOreStack, carboniteIngotStack, 0.7f);
 
         GameRegistry.addSmelting(carboniteDustStack, carboniteIngotStack, 0.7f);
 
         GameRegistry.addSmelting(tarBlockStack, tarPileStack, 0);
+
+        //Ore Dictionairy Recipies
+        GameRegistry.addRecipe(new ShapedOreRecipe(caskStack, "xzx", "yyy", "xyx",
+                'x', carboniteRodStack, 'y', "plankWood", 'z', hopperStack));
+
+        GameRegistry.addRecipe(new ShapedOreRecipe(agingBarrelStack, "xzx", "zyz", "xyx",
+                'x', carboniteReinforcementsStack, 'y', "logWood", 'z', carboniteTankStack, 'z', hopperStack));
+
+
+
+
     }
 }

@@ -1,4 +1,4 @@
-package com.moosetra.spiritdistillery.utility;
+package com.moosetra.spiritdistillery.util;
 
 import com.moosetra.spiritdistillery.reference.Reference;
 import cpw.mods.fml.common.FMLLog;

@@ -1,5 +1,6 @@
 package com.moosetra.spiritdistillery;
 
+import com.moosetra.spiritdistillery.client.handler.KeyInputEventHandler;
 import com.moosetra.spiritdistillery.handler.ConfigurationHandler;
 import com.moosetra.spiritdistillery.init.ModBlocks;
 import com.moosetra.spiritdistillery.init.ModItems;
@@ -7,7 +8,7 @@ import com.moosetra.spiritdistillery.init.ModOreGen;
 import com.moosetra.spiritdistillery.init.Recipes;
 import com.moosetra.spiritdistillery.proxy.IProxy;
 import com.moosetra.spiritdistillery.reference.Reference;
-import com.moosetra.spiritdistillery.utility.LogHelper;
+import com.moosetra.spiritdistillery.util.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -29,16 +30,24 @@ public class SpiritDistillery
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-        LogHelper.info("Pre Initialization Complete!");
 
         ModItems.init();
         ModBlocks.init();
-        Recipes.init();
         ModOreGen.init();
+
+        proxy.registerKeyBindings();
+
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        LogHelper.info("Pre Initialization Complete!");
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        Recipes.init();
+
+        FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+
         LogHelper.info("Initialization Complete!");
     }
     @Mod.EventHandler
