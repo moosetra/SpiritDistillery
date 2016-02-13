@@ -3,6 +3,7 @@ package com.moosetra.spiritdistillery;
 import com.moosetra.spiritdistillery.handler.ConfigurationHandler;
 import com.moosetra.spiritdistillery.init.ModBlocks;
 import com.moosetra.spiritdistillery.init.ModItems;
+import com.moosetra.spiritdistillery.init.ModOreGen;
 import com.moosetra.spiritdistillery.init.Recipes;
 import com.moosetra.spiritdistillery.proxy.IProxy;
 import com.moosetra.spiritdistillery.reference.Reference;
@@ -33,6 +34,7 @@ public class SpiritDistillery
         ModItems.init();
         ModBlocks.init();
         Recipes.init();
+        ModOreGen.init();
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)

@@ -12,7 +12,7 @@ public class CreativeTabSD
         @Override
         public Item getTabIconItem()
         {
-            return ModItems.TarPile;
+            return ModItems.CarboniteLighter;
         }
 
     };

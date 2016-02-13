@@ -1,13 +1,9 @@
 package com.moosetra.spiritdistillery.init;
 
+import com.moosetra.spiritdistillery.block.BlockCarboniteFrame;
 import com.moosetra.spiritdistillery.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemAxe;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems
@@ -19,6 +15,9 @@ public class ModItems
     public static final ItemSD CarbonitePickaxe = new ItemCarbonitePickaxe();
     public static final ItemSD CarboniteShovel = new ItemCarboniteShovel();
     public static final ItemSD CarboniteSword = new ItemCarboniteSword();
+    public static final ItemSD CarboniteRod = new ItemCarboniteRod();
+    public static final ItemSD CarboniteReinforcements = new ItemCarboniteReinforcements();
+    public static final ItemSD CarboniteDust = new ItemCarboniteDust();
 
     public static void init()
     {
@@ -29,6 +28,9 @@ public class ModItems
         GameRegistry.registerItem(CarbonitePickaxe,"carbonitePickaxe");
         GameRegistry.registerItem(CarboniteShovel,"carboniteShovel");
         GameRegistry.registerItem(CarboniteSword,"carboniteSword");
+        GameRegistry.registerItem(CarboniteRod,"carboniteRod");
+        GameRegistry.registerItem(CarboniteReinforcements,"carboniteReinforcements");
+        GameRegistry.registerItem(CarboniteDust,"carboniteDust");
 
     }
     public static Item.ToolMaterial carbonite = EnumHelper.addToolMaterial("Carbonite", 2, 350, 7.0F, 5, 14);

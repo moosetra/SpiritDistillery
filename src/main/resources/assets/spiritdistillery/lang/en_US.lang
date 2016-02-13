@@ -3,10 +3,14 @@ item.spiritdistillery:tarPile.name=Tar Pile
 item.spiritdistillery:carboniteIngot.name=Carbonite Ingot
 item.spiritdistillery:carboniteLighter.name=Carbonite Lighter
 item.spiritdistillery:carboniteAxe.name=Carbonite Axe
-item.spiritdistillery:carboniteIngot.name=Carbonite Lighter
+item.spiritdistillery:carboniteIngot.name=Carbonite Ingot
 item.spiritdistillery:carbonitePickaxe.name=Carbonite Pickaxe
 item.spiritdistillery:carboniteShovel.name=Carbonite Shovel
 item.spiritdistillery:carboniteSword.name=Carbonite Sword
+item.spiritdistillery:carboniteRod.name=Carbonite Rod
+item.spiritdistillery:carboniteReinforcements.name=Carbonite Reinforcements
+item.spiritdistillery:carboniteDust.name=Carbonite Dust
+
 
 # Blocks
 tile.spiritdistillery:tarBlock.name=Tar Block
@@ -15,6 +19,13 @@ tile.spiritdistillery:carboniteOre.name=Carbonite Ore
 tile.spiritdistillery:redMapleLeaf.name=Red Maple Leaf
 tile.spiritdistillery:redMapleLog.name=Red Maple Log
 tile.spiritdistillery:tarmac.name=Tarmac
+tile.spiritdistillery:cask.name=Cask
+tile.spiritdistillery:agingBarrel.name=Aging Barrel
+tile.spiritdistillery:redMaplePlanks.name=Red Maple Planks
+tile.spiritdistillery:carboniteBlock.name=Carbonite Block
+tile.spiritdistillery:carboniteTank.name=Carbonite Tank
+tile.spiritdistillery:fermenter.name=Fermenter
+tile.spiritdistillery:carboniteFrame.name=Carbonite Frame
 
 # Creative Tabs
 itemGroup.spiritdistillery=Spirit Distillery
