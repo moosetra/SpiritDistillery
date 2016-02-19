@@ -34,6 +34,8 @@ tile.spiritdistillery:fermenter.name=Fermenter
 tile.spiritdistillery:carboniteFrame.name=Carbonite Frame
 tile.spiritdistillery:barrel.name=Barrel
 tile.spiritdistillery:grinder.name=Grinder
+tile.spiritdistillery:bottler.name=Bottler
+tile.spiritdistillery:hearth.name=Hearth
 
 # keys
 keys.spiritdistillery.category=Spirit Distillery

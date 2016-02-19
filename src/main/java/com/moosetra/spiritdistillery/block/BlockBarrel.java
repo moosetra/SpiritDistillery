@@ -1,6 +1,7 @@
 package com.moosetra.spiritdistillery.block;
 
 import com.moosetra.spiritdistillery.init.ModBlocks;
+import com.moosetra.spiritdistillery.reference.Names;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -17,8 +18,8 @@ import java.util.Random;
 public class BlockBarrel extends BlockSD {
     public BlockBarrel() {
         super();
-        this.setBlockName("barrel");
-        this.setBlockTextureName("barrel");
+        this.setBlockName(Names.Blocks.BlockBarrel);
+        this.setBlockTextureName("ModelBarrel");
         this.setHardness(2.0f);
         this.setHarvestLevel("axe", 1);
         this.setStepSound(Block.soundTypeWood);

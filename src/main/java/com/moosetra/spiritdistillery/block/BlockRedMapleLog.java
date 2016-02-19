@@ -1,6 +1,7 @@
 package com.moosetra.spiritdistillery.block;
 
 import com.moosetra.spiritdistillery.init.ModBlocks;
+import com.moosetra.spiritdistillery.reference.Names;
 import net.minecraft.block.Block;
 
 import java.util.Random;
@@ -10,7 +11,7 @@ public class BlockRedMapleLog extends BlockSD
     public BlockRedMapleLog()
     {
         super();
-        this.setBlockName("redMapleLog");
+        this.setBlockName(Names.Blocks.BlockRedMapleLog);
         this.setBlockTextureName("redMapleLog");
         this.setHardness(2.0f);
         this.setHarvestLevel("axe", 1);

@@ -6,18 +6,18 @@ import net.minecraft.block.Block;
 
 import java.util.Random;
 
-public class BlockCask extends BlockSD
-{
-    public BlockCask()
-    {
+public class BlockHearth extends BlockSD {
+    public BlockHearth() {
         super();
-        this.setBlockName(Names.Blocks.BlockCask);
-        this.setBlockTextureName("ModelCask");
+        this.setBlockName(Names.Blocks.BlockHearth);
+        this.setBlockTextureName("hearth");
         this.setHardness(2.0f);
-        this.setHarvestLevel("axe", 1);
-        this.setStepSound(Block.soundTypeWood);
+        this.setHarvestLevel("pickaxe", 1);
+        this.setStepSound(Block.soundTypeMetal);
     }
+
     public int blockDropped(int metadata, Random random, int fortune) {
-        return getIdFromBlock(ModBlocks.Cask);
+        return getIdFromBlock(ModBlocks.Hearth);
     }
 }
+

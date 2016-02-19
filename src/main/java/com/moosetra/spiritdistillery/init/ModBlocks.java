@@ -22,6 +22,8 @@ public class ModBlocks
     public static final BlockSD Fermenter = new BlockFermenter();
     public static final BlockSD Barrel = new BlockBarrel();
     public static final BlockSD Grinder = new BlockGrinder();
+    public static final BlockSD Bottler = new BlockBottler();
+    public static final BlockSD Hearth = new BlockHearth();
 
     public static void init()
     {
@@ -31,15 +33,17 @@ public class ModBlocks
         GameRegistry.registerBlock(RedMapleLeaf,"redMapleLeaf");
         GameRegistry.registerBlock(RedMapleLog,"redMapleLog");
         GameRegistry.registerBlock(Tarmac,"tarmac");
-        GameRegistry.registerBlock(Cask,"cask");
-        GameRegistry.registerBlock(AgingBarrel,"agingBarrel");
+        GameRegistry.registerBlock(Cask,"ModelCask");
+        GameRegistry.registerBlock(AgingBarrel,"ModelAgingBarrel");
         GameRegistry.registerBlock(CarboniteBlock,"carboniteBlock");
         GameRegistry.registerBlock(CarboniteFrame,"carboniteFrame");
-        GameRegistry.registerBlock(CarboniteTank,"carboniteTank");
+        GameRegistry.registerBlock(CarboniteTank,"ModelCarboniteTank");
         GameRegistry.registerBlock(RedMaplePlanks,"redMaplePlanks");
-        GameRegistry.registerBlock(Fermenter,"fermenter");
-        GameRegistry.registerBlock(Barrel, "barrel");
+        GameRegistry.registerBlock(Fermenter,"ModelFermenter");
+        GameRegistry.registerBlock(Barrel, "ModelBarrel");
         GameRegistry.registerBlock(Grinder, "grinder");
+        GameRegistry.registerBlock(Bottler, "bottler");
+        GameRegistry.registerBlock(Hearth, "hearth");
 
     }
 }

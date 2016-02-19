@@ -1,6 +1,7 @@
 package com.moosetra.spiritdistillery.item;
 
 import com.moosetra.spiritdistillery.creativetab.CreativeTabSD;
+import com.moosetra.spiritdistillery.reference.Names;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
@@ -12,7 +13,7 @@ public class ItemCarboniteLighter extends ItemSD
     public ItemCarboniteLighter()
     {
         super();
-        this.setUnlocalizedName("carboniteLighter");
+        this.setUnlocalizedName(Names.Tools.ItemCarboniteLighter);
         this.setMaxDamage(192);
         this.setMaxStackSize(1);
     }
