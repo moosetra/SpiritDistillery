@@ -2,7 +2,7 @@ package com.moosetra.spiritdistillery.init;
 
 import com.moosetra.spiritdistillery.creativetab.CreativeTabSD;
 import com.moosetra.spiritdistillery.reference.Names;
-import com.moosetra.spiritdistillery.tileentity.TileEntityBarrel;
+import com.moosetra.spiritdistillery.tileentity.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -19,10 +19,10 @@ import java.util.Random;
 public class TileEntities
 {
     public static void init() {
-        GameRegistry.registerTileEntity(TileEntityBarrel.class, Names.Blocks.BlockAgingBarrel);
+        GameRegistry.registerTileEntity(TileEntityAgingBarrel.class, Names.Blocks.BlockAgingBarrel);
         GameRegistry.registerTileEntity(TileEntityBarrel.class, Names.Blocks.BlockBarrel);
-        GameRegistry.registerTileEntity(TileEntityBarrel.class, Names.Blocks.BlockCarboniteTank);
-        GameRegistry.registerTileEntity(TileEntityBarrel.class, Names.Blocks.BlockCask);
-        GameRegistry.registerTileEntity(TileEntityBarrel.class, Names.Blocks.BlockFermenter);
+        GameRegistry.registerTileEntity(TileEntityCarboniteTank.class, Names.Blocks.BlockCarboniteTank);
+        GameRegistry.registerTileEntity(TileEntityCask.class, Names.Blocks.BlockCask);
+        GameRegistry.registerTileEntity(TileEntityFermenter.class, Names.Blocks.BlockFermenter);
     }
 }

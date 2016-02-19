@@ -2,10 +2,7 @@ package com.moosetra.spiritdistillery;
 
 import com.moosetra.spiritdistillery.client.handler.KeyInputEventHandler;
 import com.moosetra.spiritdistillery.handler.ConfigurationHandler;
-import com.moosetra.spiritdistillery.init.ModBlocks;
-import com.moosetra.spiritdistillery.init.ModItems;
-import com.moosetra.spiritdistillery.init.ModOreGen;
-import com.moosetra.spiritdistillery.init.Recipes;
+import com.moosetra.spiritdistillery.init.*;
 import com.moosetra.spiritdistillery.proxy.IProxy;
 import com.moosetra.spiritdistillery.reference.Reference;
 import com.moosetra.spiritdistillery.util.LogHelper;
@@ -45,6 +42,7 @@ public class SpiritDistillery
     public void init(FMLInitializationEvent event)
     {
         Recipes.init();
+        TileEntities.init();
 
         FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
 

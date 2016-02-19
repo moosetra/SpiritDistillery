@@ -1,6 +1,8 @@
 package com.moosetra.spiritdistillery.init;
 
 import com.moosetra.spiritdistillery.block.*;
+import com.moosetra.spiritdistillery.reference.Names;
+import com.moosetra.spiritdistillery.tileentity.TileEntitySD;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -27,23 +29,23 @@ public class ModBlocks
 
     public static void init()
     {
-        GameRegistry.registerBlock(TarBlock, "tarBlock");
-        GameRegistry.registerBlock(CarboniteBomb,"carboniteBomb");
-        GameRegistry.registerBlock(CarboniteOre,"carboniteOre");
-        GameRegistry.registerBlock(RedMapleLeaf,"redMapleLeaf");
-        GameRegistry.registerBlock(RedMapleLog,"redMapleLog");
-        GameRegistry.registerBlock(Tarmac,"tarmac");
-        GameRegistry.registerBlock(Cask,"ModelCask");
-        GameRegistry.registerBlock(AgingBarrel,"ModelAgingBarrel");
-        GameRegistry.registerBlock(CarboniteBlock,"carboniteBlock");
-        GameRegistry.registerBlock(CarboniteFrame,"carboniteFrame");
-        GameRegistry.registerBlock(CarboniteTank,"ModelCarboniteTank");
-        GameRegistry.registerBlock(RedMaplePlanks,"redMaplePlanks");
-        GameRegistry.registerBlock(Fermenter,"ModelFermenter");
-        GameRegistry.registerBlock(Barrel, "ModelBarrel");
-        GameRegistry.registerBlock(Grinder, "grinder");
-        GameRegistry.registerBlock(Bottler, "bottler");
-        GameRegistry.registerBlock(Hearth, "hearth");
+        GameRegistry.registerBlock(TarBlock, Names.Blocks.BlockTarBlock);
+        GameRegistry.registerBlock(CarboniteBomb,Names.Blocks.BlockCarboniteBomb);
+        GameRegistry.registerBlock(CarboniteOre,Names.Blocks.BlockCarboniteOre);
+        GameRegistry.registerBlock(RedMapleLeaf,Names.Blocks.BlockRedMapleLeaf);
+        GameRegistry.registerBlock(RedMapleLog,Names.Blocks.BlockRedMapleLog);
+        GameRegistry.registerBlock(Tarmac,Names.Blocks.BlockTarmac);
+        GameRegistry.registerBlock(Cask,Names.Blocks.BlockCask);
+        GameRegistry.registerBlock(AgingBarrel,Names.Blocks.BlockAgingBarrel);
+        GameRegistry.registerBlock(CarboniteBlock, Names.Blocks.BlockCarboniteBlock);
+        GameRegistry.registerBlock(CarboniteFrame,Names.Blocks.BlockCarboniteFrame);
+        GameRegistry.registerBlock(CarboniteTank,Names.Blocks.BlockCarboniteTank);
+        GameRegistry.registerBlock(RedMaplePlanks,Names.Blocks.BlockRedMaplePlanks);
+        GameRegistry.registerBlock(Fermenter,Names.Blocks.BlockFermenter);
+        GameRegistry.registerBlock(Barrel, Names.Blocks.BlockBarrel);
+        GameRegistry.registerBlock(Grinder, Names.Blocks.BlockGrinder);
+        GameRegistry.registerBlock(Bottler, Names.Blocks.BlockBottler);
+        GameRegistry.registerBlock(Hearth, Names.Blocks.BlockHearth);
 
     }
 }
