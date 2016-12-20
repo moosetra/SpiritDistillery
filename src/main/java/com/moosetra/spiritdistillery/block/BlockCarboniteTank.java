@@ -4,7 +4,9 @@ import com.moosetra.spiritdistillery.init.ModBlocks;
 import com.moosetra.spiritdistillery.reference.Names;
 import com.moosetra.spiritdistillery.reference.RenderIds;
 import com.moosetra.spiritdistillery.tileentity.TileEntityAgingBarrel;
+import com.moosetra.spiritdistillery.tileentity.TileEntityCarboniteTank;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -13,26 +15,18 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockCarboniteTank extends BlockSD
+public class BlockCarboniteTank extends BlockTileEntitySD
 {
     public BlockCarboniteTank()
     {
-        super();
+        super(Material.iron);
         this.setBlockName(Names.Blocks.BlockCarboniteTank);
-        this.setBlockTextureName("ModelCarboniteTank");
         this.setHardness(2.0f);
-        this.setHarvestLevel("pickaxe", 1);
-        this.setStepSound(Block.soundTypeGlass);
     }
 
-
-    public int blockDropped(int metadata, Random random, int fortune)
-    {
-        return getIdFromBlock(ModBlocks.CarboniteTank);
-    }
     public TileEntity createNewTileEntity(World world, int var2)
     {
-        return new TileEntityAgingBarrel();
+        return new TileEntityCarboniteTank();
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.moosetra.spiritdistillery.client.renderer.tileentity;
 
 import com.moosetra.spiritdistillery.client.renderer.model.ModelBarrel;
 import com.moosetra.spiritdistillery.client.renderer.model.ModelCarboniteTank;
+import com.moosetra.spiritdistillery.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -14,8 +15,7 @@ import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
 public class RenderCarboniteTank extends TileEntitySpecialRenderer implements IItemRenderer {
-    private ModelCarboniteTank model;
-    private ResourceLocation texture = new ResourceLocation("spiritdistillery:textures/blocks/carboniteTank.png");
+    public ModelCarboniteTank model;
 
     public RenderCarboniteTank()
     {
@@ -28,7 +28,7 @@ public class RenderCarboniteTank extends TileEntitySpecialRenderer implements II
         GL11.glPushMatrix();
         GL11.glTranslated(x + 0.5, y + 1.5, z + 0.5);
         GL11.glRotated(180, 0, 0, 1);
-        this.bindTexture(texture);
+        this.bindTexture(Textures.Model.CARBONITETANK);
         this.model.render((Entity)null, 0, -0.1f, 0, 0, 0, 0.0625f);
         GL11.glPopMatrix();
     }

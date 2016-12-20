@@ -3,12 +3,16 @@ package com.moosetra.spiritdistillery.tileentity;
 import com.moosetra.spiritdistillery.init.TileEntities;
 import com.moosetra.spiritdistillery.reference.Names;
 import io.netty.handler.codec.http.HttpHeaders;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.Packet;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.UsernameCache;
 import net.minecraftforge.common.util.ForgeDirection;
 
+import java.util.Random;
 import java.util.UUID;
 
 public class TileEntitySD extends TileEntity
@@ -82,12 +86,11 @@ public class TileEntitySD extends TileEntity
     }
 
     public void setOwnerUUID(UUID ownerUUID)
-
     {
         this.ownerUUID = ownerUUID;
     }
-    public boolean hasCustomName()
 
+    public boolean hasCustomName()
     {
         return customName != null && customName.length() > 0;
     }
@@ -96,4 +99,5 @@ public class TileEntitySD extends TileEntity
     {
         return ownerUUID != null;
     }
+
 }

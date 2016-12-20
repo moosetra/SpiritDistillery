@@ -4,9 +4,11 @@ import com.moosetra.spiritdistillery.init.ModBlocks;
 import com.moosetra.spiritdistillery.reference.Names;
 import com.moosetra.spiritdistillery.reference.RenderIds;
 import com.moosetra.spiritdistillery.tileentity.TileEntityAgingBarrel;
+import com.moosetra.spiritdistillery.tileentity.TileEntityBarrel;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,22 +22,16 @@ import net.minecraftforge.common.util.ForgeDirection;
 import java.util.List;
 import java.util.Random;
 
-public class BlockBarrel extends BlockSD {
+public class BlockBarrel extends BlockTileEntitySD {
     public BlockBarrel() {
-        super();
+        super(Material.wood);
         this.setBlockName(Names.Blocks.BlockBarrel);
-        this.setBlockTextureName("ModelBarrel");
         this.setHardness(2.0f);
-        this.setHarvestLevel("axe", 1);
-        this.setStepSound(Block.soundTypeWood);
     }
 
-    public int blockDropped(int metadata, Random random, int fortune) {
-        return getIdFromBlock(ModBlocks.Barrel);
-    }
     public TileEntity createNewTileEntity(World world, int var2)
     {
-        return new TileEntityAgingBarrel();
+        return new TileEntityBarrel();
     }
 
     @Override

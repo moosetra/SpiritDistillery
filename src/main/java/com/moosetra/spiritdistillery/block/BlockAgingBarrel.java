@@ -5,7 +5,9 @@ import com.moosetra.spiritdistillery.proxy.ClientProxy;
 import com.moosetra.spiritdistillery.reference.Names;
 import com.moosetra.spiritdistillery.reference.RenderIds;
 import com.moosetra.spiritdistillery.tileentity.TileEntityAgingBarrel;
+import com.moosetra.spiritdistillery.tileentity.TileEntitySD;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -14,20 +16,13 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockAgingBarrel extends BlockSD
+public class BlockAgingBarrel extends BlockTileEntitySD
 {
     public BlockAgingBarrel()
     {
-        super();
+        super(Material.wood);
         this.setBlockName(Names.Blocks.BlockAgingBarrel);
-        this.setBlockTextureName("ModelAgingBarrel");
         this.setHardness(2.0f);
-        this.setHarvestLevel("axe", 1);
-        this.setStepSound(Block.soundTypeWood);
-    }
-    public int blockDropped(int metadata, Random random, int fortune)
-    {
-        return getIdFromBlock(ModBlocks.AgingBarrel);
     }
 
     public TileEntity createNewTileEntity(World world, int var2)
